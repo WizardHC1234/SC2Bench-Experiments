@@ -1,0 +1,26 @@
+{
+  "schema_version": "1",
+  "suite_id": "teacher_macro_mediumhard_smoke",
+  "suite_version": "1",
+  "purpose": "workflow_pilot",
+  "repetitions": 1,
+  "game_seeds": [
+    2026101001
+  ],
+  "max_decisions": 500,
+  "episode_defaults": {
+    "race": "terran",
+    "enemy_race": "terran",
+    "map_name": "KairosJunctionLE",
+    "opponent": "mediumhard",
+    "enemy_style": "macro",
+    "blocking_decisions": true,
+    "game_time_limit_seconds": 1800
+  },
+  "cases": [
+    {
+      "case_id": "kairos_tvt_mediumhard_macro",
+      "episode": {}
+    }
+  ]
+}

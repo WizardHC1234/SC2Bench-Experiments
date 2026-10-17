@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "experiment_id": "stage1_teacher_pilot",
+  "platform_config": "configs/platform.json",
+  "suite": "configs/suites/stage1_pilot.json",
+  "backend": "sharpy",
+  "max_parallel": 1,
+  "record_root": "runs/raw/stage1_teacher_pilot",
+  "teacher": {
+    "name": "teacher_llm",
+    "version": "1",
+    "model_env": "LLM_MODEL",
+    "api_key_env": "LLM_API_KEY",
+    "base_url_env": "LLM_BASE_URL",
+    "temperature": 0.2,
+    "thinking": false,
+    "api_timeout_seconds": 120.0,
+    "max_api_attempts": 3,
+    "api_retry_delay_seconds": 1.0,
+    "max_consecutive_rejections": 3
+  },
+  "conditions": [
+    {
+      "condition_id": "T0_teacher_none",
+      "skill": "none"
+    },
+    {
+      "condition_id": "T1_marine_rush",
+      "skill": "terran/marine-rush"
+    },
+    {
+      "condition_id": "T1_two_base_tanks",
+      "skill": "terran/two-base-tanks"
+    },
+    {
+      "condition_id": "T1_battlecruisers",
+      "skill": "terran/battle-cruisers"
+    }
+  ]
+}
+

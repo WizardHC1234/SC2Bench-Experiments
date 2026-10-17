@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sc2bench-experiments"
+version = "0.1.0"
+description = "Reproducible Skill-guided trajectory collection and SFT experiments for SC2Bench"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+dependencies = [
+  "python-dotenv>=1,<2",
+  "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7,<9",
+]
+
+[project.scripts]
+sc2exp = "sc2bench_experiments.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+

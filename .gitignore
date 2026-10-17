@@ -1,0 +1,35 @@
+.env
+.venv/
+.venv-sc2/
+.venv-sft/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Large/generated experiment artifacts
+runs/raw/*
+!runs/raw/.gitkeep
+runs/logs/*
+!runs/logs/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/manifests/*
+!data/manifests/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+
+# Training caches
+.cache/
+wandb/
+exports/
+
+# Server-local platform checkout and native build cache
+platform/SC2Bench/
+platform/LlamaFactory/
+.build/
+

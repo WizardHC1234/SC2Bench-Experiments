@@ -1,0 +1,8 @@
+name: sc2bench-sft
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - git
+

@@ -1,0 +1,11 @@
+### model
+# Keep these three fields aligned with the SFT run that produced the adapter.
+model_name_or_path: TBD_MODEL
+adapter_name_or_path: checkpoints/S2_two_base_tanks_seed1
+template: TBD_MODEL_TEMPLATE
+trust_remote_code: false
+
+### inference
+# Hugging Face is available in the base LlamaFactory installation. Switch to
+# vLLM only after installing and validating its optional dependencies.
+infer_backend: huggingface

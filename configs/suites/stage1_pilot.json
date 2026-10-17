@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "suite_id": "stage1_tvt_skill_pilot",
+  "suite_version": "1",
+  "purpose": "workflow_pilot",
+  "repetitions": 1,
+  "game_seeds": [20261009],
+  "max_decisions": 500,
+  "episode_defaults": {
+    "race": "terran",
+    "enemy_race": "terran",
+    "map_name": "KairosJunctionLE",
+    "opponent": "mediumhard",
+    "enemy_style": "macro",
+    "blocking_decisions": true,
+    "game_time_limit_seconds": 1800.0
+  },
+  "cases": [
+    {
+      "case_id": "kairos_tvt_mediumhard_macro",
+      "episode": {}
+    }
+  ]
+}
+

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1",
+  "experiment_id": "stage1_student_pilot",
+  "platform_config": "configs/platform.json",
+  "suite": "configs/suites/stage1_pilot.json",
+  "backend": "sharpy",
+  "max_parallel": 1,
+  "record_root": "runs/raw/stage1_student_pilot",
+  "student": {
+    "name": "student_sft",
+    "version": "1",
+    "model_env": "STUDENT_MODEL",
+    "api_key_env": "STUDENT_API_KEY",
+    "base_url_env": "STUDENT_BASE_URL",
+    "temperature": 0.0,
+    "thinking": false,
+    "api_timeout_seconds": 120.0,
+    "max_api_attempts": 3,
+    "api_retry_delay_seconds": 1.0,
+    "max_consecutive_rejections": 3
+  },
+  "conditions": [
+    {
+      "condition_id": "S2_two_base_tanks_no_skill",
+      "skill": "none"
+    },
+    {
+      "condition_id": "S3_two_base_tanks_with_skill",
+      "skill": "terran/two-base-tanks"
+    }
+  ]
+}

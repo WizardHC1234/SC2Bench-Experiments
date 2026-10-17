@@ -1,0 +1,109 @@
+{
+  "schema_version": "1",
+  "suite_id": "teacher_fixed_styles_mediumhard_hard_20_per_cell",
+  "suite_version": "1",
+  "purpose": "workflow_pilot",
+  "repetitions": 20,
+  "game_seeds": [
+    2026101001,
+    2026101002,
+    2026101003,
+    2026101004,
+    2026101005,
+    2026101006,
+    2026101007,
+    2026101008,
+    2026101009,
+    2026101010,
+    2026101011,
+    2026101012,
+    2026101013,
+    2026101014,
+    2026101015,
+    2026101016,
+    2026101017,
+    2026101018,
+    2026101019,
+    2026101020
+  ],
+  "max_decisions": 500,
+  "episode_defaults": {
+    "race": "terran",
+    "enemy_race": "terran",
+    "map_name": "KairosJunctionLE",
+    "blocking_decisions": true,
+    "game_time_limit_seconds": 1800
+  },
+  "cases": [
+    {
+      "case_id": "kairos_tvt_mediumhard_rush",
+      "episode": {
+        "opponent": "mediumhard",
+        "enemy_style": "rush"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_mediumhard_timing",
+      "episode": {
+        "opponent": "mediumhard",
+        "enemy_style": "timing"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_mediumhard_power",
+      "episode": {
+        "opponent": "mediumhard",
+        "enemy_style": "power"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_mediumhard_macro",
+      "episode": {
+        "opponent": "mediumhard",
+        "enemy_style": "macro"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_mediumhard_air",
+      "episode": {
+        "opponent": "mediumhard",
+        "enemy_style": "air"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_hard_rush",
+      "episode": {
+        "opponent": "hard",
+        "enemy_style": "rush"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_hard_timing",
+      "episode": {
+        "opponent": "hard",
+        "enemy_style": "timing"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_hard_power",
+      "episode": {
+        "opponent": "hard",
+        "enemy_style": "power"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_hard_macro",
+      "episode": {
+        "opponent": "hard",
+        "enemy_style": "macro"
+      }
+    },
+    {
+      "case_id": "kairos_tvt_hard_air",
+      "episode": {
+        "opponent": "hard",
+        "enemy_style": "air"
+      }
+    }
+  ]
+}

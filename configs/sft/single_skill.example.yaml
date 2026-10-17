@@ -1,0 +1,52 @@
+### model
+model_name_or_path: TBD_MODEL
+trust_remote_code: false
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: all
+
+### dataset
+dataset_dir: data/processed/teacher_deepseek_v4_flash_fixed_styles_20_per_cell
+dataset: sc2bench_terran_two_base_tanks_train
+eval_dataset: sc2bench_terran_two_base_tanks_validation
+template: TBD_MODEL_TEMPLATE
+cutoff_len: 8192
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 4
+train_on_prompt: false
+# Decision windows use history as context and supervise only the final action.
+mask_history: true
+
+### output
+output_dir: checkpoints/S2_two_base_tanks_seed1
+logging_steps: 10
+save_strategy: epoch
+plot_loss: true
+overwrite_output_dir: false
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 2.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+fp16: false
+gradient_checkpointing: true
+seed: 1
+data_seed: 1
+ddp_timeout: 180000000
+
+### eval
+eval_strategy: epoch
+per_device_eval_batch_size: 1

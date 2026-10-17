@@ -1,0 +1,37 @@
+version: "0.4.0"
+project:
+  title: "SC2Bench Skill Internalization Experiments"
+  short_name: "sc2bench-experiments"
+  root: "."
+target_venue:
+  name: ""
+  year: ""
+  mode: "research"
+stage:
+  current: "teacher_fixed_style_collection_configured"
+  gate: "windows_teacher_collection_pending"
+  updated_at: "2026-10-16"
+artifacts:
+  manuscript: ""
+  bibliography: ""
+  figures: "analysis/figures/"
+  tables: "analysis/tables/"
+  experiments: "configs/experiments/"
+  reviews: ""
+  submission: ""
+claims:
+  - id: "skill_internalization"
+    status: "planned"
+    statement: "A small model can internalize strategy behavior from fixed-Skill Teacher trajectories and retain it when the full Skill is removed at test time."
+experiments:
+  - id: "stage1_single_skill_sft"
+    status: "teacher_collection_configured"
+    config: "configs/experiments/teacher_deepseek_v4_flash_fixed_styles_20_per_cell.json"
+reviews: []
+revision_ledger:
+  path: ""
+  status: "not_started"
+submission_checks:
+  path: ""
+  status: "not_started"
+
