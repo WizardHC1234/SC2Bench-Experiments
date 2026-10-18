@@ -5,22 +5,22 @@
       "id": "terran/marine-rush",
       "path": "terran/marine-rush.md",
       "source": "SC2Bench",
-      "revision": "a3c4a6db39bc454cececd880c80dcd1c0b067fff",
-      "sha256": "387924dec81a5c2c6476d0ce977f2f6ac8ab0c2ede1cf9336fe3ba3925e39089"
+      "revision": "bot-imitation",
+      "sha256": "21312b4065fde668f2c2e619e3baeaec82a7df620240170c445d6daa45030e76"
     },
     {
       "id": "terran/two-base-tanks",
       "path": "terran/two-base-tanks.md",
       "source": "SC2Bench",
-      "revision": "a3c4a6db39bc454cececd880c80dcd1c0b067fff",
-      "sha256": "813a26963190a3811cf8baca54d96a0ce3c06abb59c80c8bac8b64e0597130bf"
+      "revision": "bot-imitation",
+      "sha256": "4ce84eb65b9f6aac72eb00a164431a44080315ab6fad30a46e39d27ef5b67c5e"
     },
     {
       "id": "terran/battle-cruisers",
       "path": "terran/battle-cruisers.md",
       "source": "SC2Bench",
-      "revision": "a3c4a6db39bc454cececd880c80dcd1c0b067fff",
-      "sha256": "8b86f2a6c18c582dfc96b9058f4b697f543d0098785554039b380e45b20453f8"
+      "revision": "bot-imitation",
+      "sha256": "7dd6c7d0e4301da43e6990ad3606dc842a4894f9b8d46c94d617ed7d5ead6b94"
     }
   ]
 }
