@@ -4,7 +4,7 @@ set -euo pipefail
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PLATFORM_DIR="${SC2EXP_PLATFORM_SOURCE:-${PROJECT_ROOT}/platform/SC2Bench}"
 PLATFORM_URL="${SC2BENCH_GIT_URL:-https://github.com/WizardHC1234/SC2Bench.git}"
-PLATFORM_COMMIT="${SC2BENCH_COMMIT:-212e31f963e30dda5b3a903f364380e4cfdade17}"
+PLATFORM_COMMIT="${SC2BENCH_COMMIT:-fec33c088a157e04c910c43f2e080130f6282ce4}"
 SC2_PYTHON_BIN="${SC2_PYTHON_BIN:-python3.9}"
 SC2_VENV="${SC2_VENV:-${PROJECT_ROOT}/.venv-sc2}"
 PATHLIB_URL="https://github.com/DrInfy/sc2-pathlib.git"

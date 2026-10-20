@@ -1,7 +1,7 @@
 {
   "schema_version": "1",
   "source": "platform/SC2Bench",
-  "expected_git_commit": "212e31f963e30dda5b3a903f364380e4cfdade17",
+  "expected_git_commit": "fec33c088a157e04c910c43f2e080130f6282ce4",
   "allow_dirty_worktree": false,
   "notes": "The server bootstrap creates a clean, commit-pinned platform checkout here. Experiment code must not edit it."
 }
